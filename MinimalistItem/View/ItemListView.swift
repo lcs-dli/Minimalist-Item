@@ -12,21 +12,26 @@ struct ItemListView: View {
     var body: some View {
         NavigationView{
             List(testItems){currentdisplay in
-                HStack{
-                    Rectangle()
-                        .foregroundColor(importanceColor(i: currentdisplay.importance))
-                        .frame(width: 20)
-                       
-                    VStack(alignment: .leading){
-                        Text(currentdisplay.name)
-                            .bold()
-        
-                        Text(currentdisplay.type)
-                            .foregroundColor(.gray)
+                Button(action: {
+                    
+                }, label: {
+                    HStack{
+                        Rectangle()
+                            .foregroundColor(importanceColor(i: currentdisplay.importance))
+                            .frame(width: 20)
+                           
+                        VStack(alignment: .leading){
+                            Text(currentdisplay.name)
+                                .bold()
+            
+                            Text(currentdisplay.type)
+                                .foregroundColor(.gray)
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right")
                     }
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                }
+                })
+                
             }
         }.navigationBarTitle("Items", displayMode: .large)
     }
