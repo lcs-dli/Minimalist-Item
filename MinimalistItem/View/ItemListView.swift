@@ -10,7 +10,18 @@ import SwiftUI
 struct ItemListView: View {
     //MARK: Computing property
     var body: some View {
-        NavigationView{
+        VStack{
+            HStack{
+                Button(action: {
+                    
+                }, label: {
+                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                })
+                Spacer()
+                Text("Items")
+                    .bold()
+                    .font(.largeTitle)
+            }
             List(testItems){currentdisplay in
                 Button(action: {
                     
@@ -33,7 +44,8 @@ struct ItemListView: View {
                 })
                 
             }
-        }.navigationBarTitle("Items", displayMode: .large)
+        }
+            
     }
     
     //MARK: Function
@@ -52,7 +64,18 @@ struct ItemListView: View {
 }
 
 #Preview {
-    NavigationView{
+    TabView{
         ItemListView()
+            .tabItem {
+                VStack{
+                    Image(systemName: "list.dash")
+                    Text("Items")
+                }
+            }
+            .tag(1)
+        
+        Text("Stat")
+        
+        Text("Graph")
     }
 }
