@@ -13,7 +13,10 @@ struct ItemListView: View {
         NavigationView{
             List(testItems){currentdisplay in
                 HStack{
-                    
+                    Rectangle()
+                        .foregroundColor(importanceColor(i: currentdisplay.importance))
+                        .frame(width: 20)
+                       
                     VStack{
                         Text(currentdisplay.name)
                             .bold()
@@ -27,6 +30,18 @@ struct ItemListView: View {
     }
     
     //MARK: Function
+    func importanceColor(i: Int) -> Color {
+        if i==1 {
+            return .red
+        }else if i == 2{
+            return .orange
+        }else if i == 3{
+            return .yellow
+        }else if i == 4{
+            return .green
+        }
+        return .gray
+    }
 }
 
 #Preview {
