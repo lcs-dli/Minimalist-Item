@@ -17,13 +17,15 @@ struct ItemListView: View {
                         .foregroundColor(importanceColor(i: currentdisplay.importance))
                         .frame(width: 20)
                        
-                    VStack{
+                    VStack(alignment: .leading){
                         Text(currentdisplay.name)
                             .bold()
         
                         Text(currentdisplay.type)
                             .foregroundColor(.gray)
                     }
+                    Spacer()
+                    Image(systemName: "chevron.right")
                 }
             }
         }.navigationBarTitle("Items", displayMode: .large)
