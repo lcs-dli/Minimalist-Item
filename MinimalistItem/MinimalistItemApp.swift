@@ -11,7 +11,7 @@ import SwiftUI
 struct MinimalistItemApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ItemListView()
         }
     }
 }
