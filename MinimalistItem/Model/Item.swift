@@ -8,7 +8,7 @@
 import Foundation
 
 struct Item: Identifiable{
-    let id = UUID()
+    var id : Int
     var name: String
     var description: String?
     var importance: Int
@@ -16,6 +16,6 @@ struct Item: Identifiable{
 }
 
 let testItems: [Item] = [
-    Item(name: "Macbook", description: "Study tool", importance: 1, type: "Study"),
-    Item(name: "Ipad", description: "for fun", importance: 2, type: "Leisure")
+    Item(id: 0, name: "Macbook", description: "Study tool", importance: 1, type: "Study"),
+    Item(id : 1, name: "Ipad", description: "for fun", importance: 2, type: "Leisure")
 ]

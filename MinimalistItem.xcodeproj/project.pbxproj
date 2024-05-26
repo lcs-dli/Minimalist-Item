@@ -12,6 +12,8 @@
 		49044E762BFFEC0A0099790A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49044E752BFFEC0A0099790A /* Preview Assets.xcassets */; };
 		49044E842BFFEC6A0099790A /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49044E832BFFEC6A0099790A /* ItemListView.swift */; };
 		49044E862BFFED7D0099790A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49044E852BFFED7D0099790A /* Item.swift */; };
+		493B18012C03769A00E03172 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B18002C03769A00E03172 /* DatabaseHelper.swift */; };
+		493B18052C03787700E03172 /* Database.db in Resources */ = {isa = PBXBuildFile; fileRef = 493B18042C03787700E03172 /* Database.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		49044E752BFFEC0A0099790A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49044E832BFFEC6A0099790A /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		49044E852BFFED7D0099790A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		493B18002C03769A00E03172 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		493B18042C03787700E03172 /* Database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		49044E6D2BFFEC080099790A /* MinimalistItem */ = {
 			isa = PBXGroup;
 			children = (
+				493B18042C03787700E03172 /* Database.db */,
 				49044E6E2BFFEC080099790A /* MinimalistItemApp.swift */,
 				49044E7F2BFFEC2E0099790A /* ViewModel */,
 				49044E7E2BFFEC260099790A /* Model */,
@@ -83,6 +88,7 @@
 		49044E7E2BFFEC260099790A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				493B17FF2C03768A00E03172 /* Helpers */,
 				49044E852BFFED7D0099790A /* Item.swift */,
 			);
 			path = Model;
@@ -100,6 +106,14 @@
 			children = (
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		493B17FF2C03768A00E03172 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				493B18002C03769A00E03172 /* DatabaseHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +176,7 @@
 			files = (
 				49044E762BFFEC0A0099790A /* Preview Assets.xcassets in Resources */,
 				49044E732BFFEC0A0099790A /* Assets.xcassets in Resources */,
+				493B18052C03787700E03172 /* Database.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493B18012C03769A00E03172 /* DatabaseHelper.swift in Sources */,
 				49044E6F2BFFEC080099790A /* MinimalistItemApp.swift in Sources */,
 				49044E862BFFED7D0099790A /* Item.swift in Sources */,
 				49044E842BFFEC6A0099790A /* ItemListView.swift in Sources */,

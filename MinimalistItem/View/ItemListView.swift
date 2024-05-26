@@ -15,12 +15,20 @@ struct ItemListView: View {
                 Button(action: {
                     
                 }, label: {
-                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Image(systemName: "plus")
                 })
+                .padding()
                 Spacer()
                 Text("Items")
                     .bold()
                     .font(.largeTitle)
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Text("Edit")
+                })
+                .padding()
             }
             List(testItems){currentdisplay in
                 Button(action: {
