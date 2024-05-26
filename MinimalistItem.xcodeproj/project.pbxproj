@@ -59,6 +59,7 @@
 			children = (
 				493B18042C03787700E03172 /* Database.db */,
 				49044E6E2BFFEC080099790A /* MinimalistItemApp.swift */,
+				493B17FF2C03768A00E03172 /* Helpers */,
 				49044E7F2BFFEC2E0099790A /* ViewModel */,
 				49044E7E2BFFEC260099790A /* Model */,
 				49044E7C2BFFEC120099790A /* View */,
@@ -88,7 +89,6 @@
 		49044E7E2BFFEC260099790A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				493B17FF2C03768A00E03172 /* Helpers */,
 				49044E852BFFED7D0099790A /* Item.swift */,
 			);
 			path = Model;

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ItemListView: View {
+    //MARK: Storing property
+    @State var Items = DatabaseHelper.shared.readUsers()
+    
     //MARK: Computing property
     var body: some View {
         VStack{
@@ -30,7 +33,7 @@ struct ItemListView: View {
                 })
                 .padding()
             }
-            List(testItems){currentdisplay in
+            List(Items){currentdisplay in
                 Button(action: {
                     
                 }, label: {
