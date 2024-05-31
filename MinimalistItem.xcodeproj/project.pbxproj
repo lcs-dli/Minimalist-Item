@@ -14,6 +14,7 @@
 		49044E862BFFED7D0099790A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49044E852BFFED7D0099790A /* Item.swift */; };
 		493B18012C03769A00E03172 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B18002C03769A00E03172 /* DatabaseHelper.swift */; };
 		493B18052C03787700E03172 /* Database.db in Resources */ = {isa = PBXBuildFile; fileRef = 493B18042C03787700E03172 /* Database.db */; };
+		49438C962C0A97920036FD38 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49438C952C0A97920036FD38 /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		49044E852BFFED7D0099790A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		493B18002C03769A00E03172 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		493B18042C03787700E03172 /* Database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.db; sourceTree = "<group>"; };
+		49438C952C0A97920036FD38 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		49044E802BFFEC420099790A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				49438C952C0A97920036FD38 /* ItemView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				493B18012C03769A00E03172 /* DatabaseHelper.swift in Sources */,
 				49044E6F2BFFEC080099790A /* MinimalistItemApp.swift in Sources */,
 				49044E862BFFED7D0099790A /* Item.swift in Sources */,
+				49438C962C0A97920036FD38 /* ItemView.swift in Sources */,
 				49044E842BFFEC6A0099790A /* ItemListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
