@@ -59,7 +59,7 @@ class DatabaseHelper {
         }
     
     //read
-    func readUsers() -> [Item] {
+    func readItems() -> [Item] {
         var items: [Item] = []
         let queryString = "SELECT * FROM Item"
         var queryStatement: OpaquePointer? = nil
@@ -92,7 +92,7 @@ class DatabaseHelper {
                 }
                 sqlite3_bind_int(updateStatement, 3, Int32(item.importance))
                 sqlite3_bind_text(updateStatement, 4, (item.type as NSString).utf8String, -1, nil)
-                sqlite3_bind_int(updateStatement, 5, Int32(item.id))
+                sqlite3_bind_int(updateStatement, 5, Int32(item.id!))
                 
                 if sqlite3_step(updateStatement) == SQLITE_DONE {
                     print("Successfully updated row.")

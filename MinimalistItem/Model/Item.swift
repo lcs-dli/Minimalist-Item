@@ -8,7 +8,7 @@
 import Foundation
 
 struct Item: Identifiable{
-    var id : Int
+    var id : Int?
     var name: String
     var description: String?
     var importance: Int

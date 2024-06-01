@@ -9,14 +9,15 @@ import SwiftUI
 
 struct ItemListView: View {
     //MARK: Storing property
-    @State var Items = DatabaseHelper.shared.readUsers()
+    @State var Items = DatabaseHelper.shared.readItems()
+    @State var isPresented = false
     
     //MARK: Computing property
     var body: some View {
         VStack{
             HStack{
                 Button(action: {
-                    
+                    isPresented = true
                 }, label: {
                     Image(systemName: "plus")
                 })
@@ -41,6 +42,9 @@ struct ItemListView: View {
                 })
                 
             }
+        }
+        .sheet(isPresented: $isPresented){
+            ItemFormView(item: Item(name: "", description: "", importance: 0, type: ""), isNew: true)
         }
             
     }
